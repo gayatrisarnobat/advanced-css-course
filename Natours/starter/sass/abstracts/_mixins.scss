@@ -1,0 +1,8 @@
+@mixin clearfix {
+  // add a pseudo-element after the float elements to clear the zero height
+  &::after {
+    content: '';
+    display: table;
+    clear: both; // clear both floats, left and right
+  }
+}
